@@ -1,0 +1,22 @@
+{
+  "name": "crowd-coverage-platform",
+  "version": "1.0.0",
+  "description": "A Decentralized Insurance Platform",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Crowd-Coverage/crowd-coverage-platform.git"
+  },
+  "author": "Phillip Lorenzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Crowd-Coverage/crowd-coverage-platform/issues"
+  },
+  "homepage": "https://github.com/Crowd-Coverage/crowd-coverage-platform#readme"
+}
