@@ -15,7 +15,7 @@ contract Policy {
   mapping(address => public) approvals;
   uint public approveCount;
 
-  function createRequest(string item, uint itemValue, address policyHolder) public restricted {
+  function createPolicy(string item, uint itemValue, address policyHolder) public restricted {
       PolicyInfo memory newPolicy = PolicyInfo({
         policyHolder: policyHolder,
         item: item,
@@ -26,6 +26,14 @@ contract Policy {
 
         policies.push(newPolicy);
     }
+
+  function approvePolicy {
+
+  }
+
+  function denyPolicy {
+    
+  }
 }
 
 
