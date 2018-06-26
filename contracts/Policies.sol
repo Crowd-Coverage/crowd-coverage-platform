@@ -10,8 +10,22 @@ contract Policy {
     mapping(address => bool) approvals;
   }
 
+  PolicyInfo[] public policies;
   uint minimumContribution;
   mapping(address => public) approvals;
   uint public approveCount;
+
+  function createRequest(string item, uint itemValue, address policyHolder) public restricted {
+      PolicyInfo memory newPolicy = PolicyInfo({
+        policyHolder: policyHolder,
+        item: item,
+        monthlyPremium: monthlyPremium,
+        complete: false,
+        approveCount: 0
+      });
+
+        policies.push(newPolicy);
+    }
 }
+
 

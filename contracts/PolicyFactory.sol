@@ -12,4 +12,3 @@ contract policyFactory {
     return deployedPolicies;
   } 
 }
-
